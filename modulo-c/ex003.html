@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            text-align: center;
+            background-color: bisque;
+        }
+        div#res {
+           font: normal 17pt Arial;
+           margin-top: 20px
+        ;
+        }
+        input{
+            width: 100px; /*COM ESSA TAG FORMATO A LARGURA*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +<!--FORMATAÇÃO PARA O USUARIO COLOCAR OS NUMEROS QUE ELE QUER SOMAR.-->
+    <input type="number" name="txtn2" id="txtn2"> <!--LEIA O COMENTARIO A CIMA-->
+    <input type="button" value="Somar" onclick="somar()"> <!--TAG PARA CRIAÇÃO DE UM BOTÃO QUE TERÁ O NOME DE 'SOMAR' E QUANDO CLICADO IRÁ SOMAR OS DOIS NUMEROS-->
+    <div id="res">Resultado:</div> <!--UMA DIV AONDE NO SCRIPT EU FORMATEI PARA QUANDO O USUARIO CLICAR NO BOTÃO APARECER O RESULTADO-->
+    <script>
+        function somar(){
+           var tn1 = document.getElementById('txtn1') //GUARDANDO O VALOR QUE O USUARIO COLOCOU DENTRO DE UMA VARIAVEL NO SCRIPT
+           var tn2 = document.querySelector('input#txtn2') // SE FOR 'ID' USO A '#' SE FOR UMA CLASS USO O '.'
+           var res = document.getElementById('res')
+           var n1 = Number(tn1.value) //AQUI EU FIZ A CONVERÇÃO DE STRING PARA NUMEROS POIS IRIA FAZER UMA CONCATENAÇÃO // O ".VALUE" É O VALOR QUE O USUARIO VAI DIGIAR.
+           var n2 = Number(tn2.value) //MESMA COISA DO COMENTARIO A CIMA
+           var s = n1 + n2 //CRIACÃO DA VARIAVEL PARA SOMAR OS DOIS VALORES
+           res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}` //FORMATAÇÃO DA DIV AONDE REESCREVI O QUE IRÁ APARECER NA TELA
+        }
+    </script>
+
+</body>
+</html>

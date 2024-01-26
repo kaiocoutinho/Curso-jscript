@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o dom</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+<body>
+    <h1>Testes</h1>
+    <p>aprendendo a usar <strong>Dom</strong> em javascript</p>
+    <div id="msg">clique em mim</div>
+    <script>
+      var p1 = document.getElementsByTagName('p')[0]
+      var d = document.getElementById('msg')
+      d.innerText = 'Olá'
+    </script>
+</body>
+</html>

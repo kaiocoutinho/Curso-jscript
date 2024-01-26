@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(93, 93, 206) ;
+    font: normal 20pt Arial;
+}
+header{
+color: white;
+text-align: center;
+}
+section{
+background-color: white;
+border-radius: 10px; /* COMO DEIXAR A BORDA REDONDA  */
+padding: 20px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322); /* 5PX DESLOCAMENTO LATERAL -- 5PX DESLOCAMNETO VERTICAL -- 10PX DE ESPALHAMENTO -- E COR PRETA.  */
+
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Concluir" onclick="click()">
+    <div id="res">
+
+    </div>
+    <script>
+        function click(){
+        var paises = 'Brasil'
+        var lugar = document.getElementById('pais')
+        var res = document.getElementById('res')
+        if(lugar == paises){
+            res.innerHTML = `Você é brasileiro`
+        }else{
+            res.innerHTML = `Voce é estrangeiro`
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload ="carregar()"> <!--ONLOAD == QUANDO CARREGAR A PAGINA CHAMO A FUNÇÃO 'CARREGAR()'-->
+    <header>
+      <h1>Vamos contar</h1>
+    </header>
+  <section> 
+    <div>
+    <p>Início <input type="number" name="txtn1" id="txtn1"></p>
+    <p>Fim <input type="number" name="txtn2" id="txtn2"></p>
+    <p>Passo <input type="number" name="txtn3" id="txtn3"></p>
+    <input type="button" value="Contar" onclick="clicar()">
+    </div>
+    <div id="msg">
+    <p>Preparando a contagem ...</p>
+    </div> 
+
+   
+    
+
+    </section>
+
+    <footer><p>&copy;Curso em video</p></footer>
+    <script src="script.js"></script>  <!--CRIEI UM SCRIPT PARA SER FEITO EM OUTRA PASTA ASSIM COMO O CSS-->
+</body>
+</html>
